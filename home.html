@@ -1,318 +1,280 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Aryan Wadher | Developer</title>
-	<link rel="icon" type="image/png" href="images/male-technologist.png" hreflang="en-us">
-	<link rel="shortcut icon" href="images/male-technologist.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="home.css">
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Wadher | Mobile Developer & Software Engineer</title>
+    <link rel="icon" type="image/png" href="images/male-technologist.png">
+    <link rel="shortcut icon" href="images/male-technologist.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <canvas id="bgCanvas"></canvas>
+    </div>
 
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <div class="logo">AW</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
 
-<div id = "site">
-	<div class="switch-wrapper"> 
-		</a>
-		<div class="sun"></div> 
-		<div class="toggle-wrapper">
-			<input type="checkbox" id="switch"  />
-			<label for="switch" id="switch1" >Toggle</label> 
-		</div>
-		<div class="moon"></div>
-	</div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-tag">👋 Available for Co-op: Jan - Aug 2026</span>
+            <h1>Hi, I'm <span class="gradient-text">Aryan Wadher</span></h1>
+            <div class="hero-subtitle">
+                I'm a <span class="typing-text" id="typingText">Mobile Developer</span>
+            </div>
+            <p style="max-width: 700px; color: var(--text-dim); margin-bottom: 2rem; font-size: 1.1rem;">
+                Master's student at Northeastern University specializing in mobile app development. 
+                Passionate about building scalable Android applications with beautiful user experiences.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work →</a>
+                <a href="mailto:wadher.a@northeastern.edu" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
 
-	<header class="intro">
-		<h1 class="intro_hello">
-			Hello!
-			<span  id="wave" class="emoji wave-hand animated "></span>
-		</h1>
-		<h2 class="intro_tagline">
-			I'm
-			<div class="myname">Aryan Wadher</div>
-			 a creative-minded <br><br><br>
-			<div class="mytext">
-				<div class="content">
-					<div class=" container">
-						<ul class="list">
-							<li class="item">App & Software Developer.</li>
-							<li class="item">Web Developer. </li>
-							<li class="item">Ethical Hacker. </li>
-						</ul>
-					</div><br>
-				</div>
-			</div>
-			<span>I focus on  developing and designing softwares for both Mobile Level and Desktop Level,
-				 not to forget, full-fledged web apps as well.
-			<span id="emojiwavehand" class="emoji technologist"></span>
-		</h2>
-		<h3 class="intro_contact">
-			<span>Get in touch</span>
-			<span class="emoji pointer"></span>
-			<span id="emailme">
-				<a href="mailto:aryan20028@gmail.com" target="_blank" class="highlight-link">aryan20028@gmail.com</a>
-			</span>
-		</h3>
-	</header>
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">4.0</div>
+                <div class="stat-label">GPA at Northeastern</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Students Impacted</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Vaccine Tracker Users</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">40%</div>
+                <div class="stat-label">Engagement Increase</div>
+            </div>
+        </div>
+    </section>
 
-	<section class = "section background" >
-		<div class="section_title">Background</div>
-		<div class="section_content">
-			<p>
-					I completed my Bachelor's degree in Computer Applications stream 
-					and Bachelor's degree in Commerce
-					<a class = "underline-link" href="#" target="_blank">
-					</a> starting from 2020 .
-				  	While earning my degree, I completed a 1 month internship at 
-				  	<a class = "underline-link" href="https://www.thelalit.com/the-lalit-mumbai/" target="_blank">The Lalit Mumbai</a> 
-				  	 as a System Engineer.	
-			</p>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-header">
+            <div class="section-tag">Expertise</div>
+            <h2 class="section-title">Technical Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>📱 Mobile Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Kotlin</span>
+                    <span class="skill-tag">Android SDK</span>
+                    <span class="skill-tag">Flutter (Dart)</span>
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">Material Design</span>
+                    <span class="skill-tag">Jetpack Compose</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>💻 Programming</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C/C++</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>🗄️ Backend & Databases</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">Node.js</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>☁️ Cloud & Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">GCP</span>
+                    <span class="skill-tag">Azure</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Android Studio</span>
+                    <span class="skill-tag">Dagger</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<p>
-				As a developer, I enjoy bridging the gap between functionality and design. My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences. In addition, I am highly responsive to client needs and also committed to helping people realize their vision.
-			</p>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header">
+            <div class="section-tag">Portfolio</div>
+            <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Edenic - Stock Market Gamification</h3>
+                    <p class="project-description">
+                        Production-ready Android application featuring real-time stock trading simulation, 
+                        social features, and collaborative stock recommendations. Optimized performance with 
+                        40% faster load times through efficient caching and memory optimization.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Android SDK</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Yahoo Finance API</span>
+                        <span class="tech-tag">Material Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">View Details →</a>
+                    </div>
+                </div>
+            </div>
 
-			<a class="status" href="https://github.com/hacker20028/aryanwadher.github.io/blob/main/images/myResume.pdf" target="_blank"> 
-				<div class="status_light"> 
-					<div class="status_light_ring"></div> 
-					<div class="status_light_led"></div> 
-				</div> 
-				<div class="status_message">
-					Interested in working together? Reach out!
-				</div> 
-			</a>
-		</div>
-	</section>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Connect - Secure Messaging App</h3>
+                    <p class="project-description">
+                        Cross-platform mobile application with end-to-end encryption, real-time messaging, 
+                        push notifications, and seamless authentication. Delivers pixel-perfect UI with 
+                        smooth animations across iOS and Android.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Encryption</span>
+                        <span class="tech-tag">Real-time DB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.aryan.connect.connect" class="btn btn-primary" target="_blank">Play Store →</a>
+                    </div>
+                </div>
+                <div class="project-image"></div>
+            </div>
 
-	<section class="section skills" data-aos="slide-up">
-		<div class="section_title">skills</div>
-		<div class="section_content">
-			<div class="skillz">
-				<div class="skillz_category"> 
-					<div class="skillz_category_label">
-						Languages
-					</div>
-					<ul>
-						 <li class="skillz_category_item">PYTHON</li>
-						 <li class="skillz_category_item">JAVASCRIPT(ES5)(ES6)</li> 
-						 <li class="skillz_category_item">CSS3</li>
-						 <li class="skillz_category_item">HTML5</li>
-						 <li class="skillz_category_item">C</li>
-						 <li class="skillz_category_item">C++</li>
-                         <li class="skillz_category_item">JAVA</li>
-					</ul> 
-				</div>
+            <div class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3 class="project-title">COVID-19 Vaccine Tracker</h3>
+                    <p class="project-description">
+                        Automated tracking system using official CoWIN APIs that helped 500+ families 
+                        secure vaccination appointments during the pandemic. Intelligent notification 
+                        system with location and age-based filtering.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CoWIN APIs</span>
+                        <span class="tech-tag">Telegram Bot</span>
+                        <span class="tech-tag">Web Scraping</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<div class="skillz_category"> 
-					<div class="skillz_category_label">
-						frameworks
-					</div>
-					<ul>
-						<li class="skillz_category_item">FLUTTER ENGINE</li>
-						
-					</ul>
-				</div>
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="section-header">
+            <div class="section-tag">Career</div>
+            <h2 class="section-title">Work Experience</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">May 2025 - Present</div>
+                    <h3 class="timeline-title">Global Learning Service Ambassador</h3>
+                    <div class="timeline-company">Northeastern University, Portland, ME</div>
+                    <p class="timeline-description">
+                        • Developed comprehensive programming framework serving 1000+ international students<br>
+                        • Enhanced engagement by 40% through data-driven event planning<br>
+                        • Orchestrated large-scale multi-cultural events with strategic partnerships
+                    </p>
+                </div>
+            </div>
 
-				<div class="skillz_category"> 
-					<div class="skillz_category_label">
-						Tools
-					</div>
-					<ul>
-						<li class="skillz_category_item">INTELLIJIDEA</li>
-						<li class="skillz_category_item">STACK OVERFLOW</li>
-						<li class="skillz_category_item">SUBLIME TEXT</li>
-						<li class="skillz_category_item">GIT & GITHUB</li>
-						<li class="skillz_category_item">WORDPRESS</li>
-						<li class="skillz_category_item">WAMP SERVER</li>
-						<li class="skillz_category_item">ANDROID STUDIO</li>	
-					</ul>
-				</div>
-			
-				<div class="skillz_category"> 
-					<div class="skillz_category_label">
-						Design
-					</div>
-					<ul>
-						<li class="skillz_category_item">OUTLINING</li>
-						<li class="skillz_category_item">PHOTOSHOP</li>
-						<li class="skillz_category_item">TYPOGRAPHY</li>
-						<li class="skillz_category_item">USER TESTING</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">June 2023 - Dec 2023</div>
+                    <h3 class="timeline-title">System Engineer</h3>
+                    <div class="timeline-company">Pride Group of Hotels, Mumbai, India</div>
+                    <p class="timeline-description">
+                        • Architected automated monitoring systems reducing operational costs by 10%<br>
+                        • Developed digital solutions including automated billing and revenue tracking<br>
+                        • Led disaster recovery initiative with team of 5 engineers
+                    </p>
+                </div>
+            </div>
 
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Feb 2023 - May 2023</div>
+                    <h3 class="timeline-title">Team Lead</h3>
+                    <div class="timeline-company">Actsame, Mumbai, India</div>
+                    <p class="timeline-description">
+                        • Reduced delivery timelines by 30% through agile methodologies<br>
+                        • Enhanced project success rates by 10% through code review standards<br>
+                        • Spearheaded technical budget planning with executive leadership
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<section class="section experience">
-		<div class="section_title">
-			Experience
-		</div>
-		
-		<div class="section_content">
-			<div class="jobs">
-				<div class="job">
-					<div class="time-place"> 
-						<div class="job_company">
-							<a href="https://www.thelalit.com/the-lalit-mumbai/" target="_blank">The Lalit Mumbai</a>
-						</div>
-						<div class="job_time">       
-							Feburary 2021 - March 2021 
-						</div>
-			  		</div>
-					<div class="job_position">
-						System Engineer
-					</div>
-				</div>
-				
-				
-			</div>
-			<a href="https://github.com/hacker20028/aryanwadher.github.io/blob/main/images/myResume.pdf" target="_blank" class="arrow-link">View My Resume</a>
-		</div>
-	</section>
-	
-	<section class="section featured-projects"> 
-		<div class="section_title">Recent Projects</div> 
-			<div class="section_content"> 
-				<div class="project salzakshipment">
-					<figure class="project_pic"> 
-						<a href="https://play.google.com/store/apps/details?id=com.aryan.connect.connect" target="_blank">
-							<img src="images/icon.png" alt="image">
-						</a> 
-					</figure> 
-				</div><br>
-				<details>
-					<summary> Connect </summary>
-					<div class="project_name">
-							<a href="https://play.google.com/store/apps/details?id=com.aryan.connect.connect" target="_blank">  </a>
-					</div>
-					<div class = "featured-projects-content"> 
-						<p>Connect is a Chat Application build on Flutter Environment. </p>
-						
-					</div>
-					<div class="project_used">
-							<span class="project_used_item">FLUTTER</span>
-							<span class="project_used_item">FLUTTER ENGINE</span>
-							<span class="project_used_item">DART</span>
-							<span class="project_used_item">GOOGLE DATABASE</span>
-							<span class="project_used_item">GOOGLE CLOUD SERVICES</span>  
-							<span class="project_used_item">GOOGLE FIRESTORE</span>
-							
-					</div> 
-					<div class="project_links"> 
-							<a href="https://play-lh.googleusercontent.com/lIjqJi0yMdimapczMxvpFQ5_of5kp0FfRaOeVuT5ktxtHBKL8xJ0xwjFRlL-IKuuJIc=w720-h310-rw" target="_blank">
-								<img src="images/ss1.webp" alt="image">
-							</a>
-							<a href="https://play-lh.googleusercontent.com/xzf7gGSy9FtOp2ALK9vM3G29UJ69SgvUoouBCYg6xCyjwnHnxPXU_jt7yqvdGKTE2g=w720-h310-rw" target="_blank">
-								<img src="images/ss2.webp" alt="image">
-							</a>
-					</div>
-				</details>
-			</div>
-	</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <div class="section-tag">Let's Connect</div>
+            <h2 class="section-title">Get In Touch</h2>
+        </div>
+        <div class="contact-content">
+            <p style="font-size: 1.2rem; color: var(--text-dim); margin-bottom: 2rem;">
+                I'm currently seeking co-op opportunities from January to August 2026. 
+                Let's build something amazing together!
+            </p>
+            <a href="mailto:wadher.a@northeastern.edu" class="btn btn-primary" style="margin: 0 auto;">
+                Email Me →
+            </a>
+            <div class="contact-links">
+                <a href="mailto:wadher.a@northeastern.edu" class="contact-link" title="Email">✉️</a>
+                <a href="https://linkedin.com/in/aryan-wadher" class="contact-link" target="_blank" title="LinkedIn">💼</a>
+                <a href="https://github.com/hacker20028" class="contact-link" target="_blank" title="GitHub">💻</a>
+                <a href="https://instagram.com/aryan21213121211" class="contact-link" target="_blank" title="Instagram">📸</a>
+            </div>
+        </div>
+    </section>
 
-	<section class="section other-projects">
-		<div class="section_title">Other Projects</div>
-			<div class="section_content">
+    <!-- Footer -->
+    <footer>
+        <p>Designed & Developed by Aryan Wadher © 2025</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Built with passion & lots of coffee ☕</p>
+    </footer>
 
-				<details>
-					<summary>The Developers Community</summary>
-					<div class="project"> 
-						<p>The Developers Community is an online Community for the developers , by the developers.</p> 
-						<div class="project_used"> 
-							<span class="project_used_item">PHP</span> 
-							<span class="project_used_item">WORDPRESS</span>
-							<span class="project_used_item">CSS</span>
-							<span class="project_used_item">HTML</span> 
-						</div> 
-						<div class="project_links"> 
-							<a href="https://python.aryanwadher.in/" target="_blank">
-								<img src="images/py-web.png" alt="image">
-							</a>
-							<a href="https://t.me/tdcomm" target="_blank">
-								<img src="images/telegram-seeklogo.com.svg" alt="image">
-							</a>
-						</div>
-					</div>
-				</details>
-
-				<details>
-					<summary>Covid Vaccine Tracker</summary>
-					<div class="project"> 
-						<p>This is a Vaccine Tracker to ease the slot finding process.</p> 
-						<div class="project_used"> 
-							<span class="project_used_item">PYTHON</span> 
-							<span class="project_used_item">TELEGRAM APIS</span>
-							<span class="project_used_item">COWIN APIS</span>
-							<span class="project_used_item">INTERACTIVE BOTS</span> 
-						</div> 
-						<div class="project_links"> 
-							<a href="https://t.me/mumbai_vaccine_tracker_45" target="_blank">
-								<img src="images/telegram-seeklogo.com.svg" alt="image">
-							</a>
-						</div>
-					</div>
-				</details>
-
-				
-			</div>
-	</section>
-
-	<footer class="footer">
-	 	<div class="footer_copyright"> 
-	 		<div class="top"> 
-	 			<span>
-	 				Designed &amp; Developed by
-				</span>
-			</div> 
-			<div class="bottom"> 
-				<span>
-					Aryan Wadher
-				</span> 
-				<img class="emoji" src="images/rockon.png" alt="emoji"> 
-				<span>
-					2023
-				</span>
-			</div> 
-		</div> 
-		<div class="footer_links"> 
-			<a href="mailto:aryan20028@gmail.com" target="_blank" title="email"> 
-				<span class="text">
-					email
-				</span> 
-				<img src="images/email.svg" alt="email">
-			</a>
-			<a href="https:#" target="_blank" title="linkedin"> 
-				<span class="text">
-					linkedin
-				</span>
-				<img src="images/linkedin.svg" alt="linkedin">
-			</a>
-			<a href="https://www.instagram.com/aryan21213121211/" target="_blank" title="instagram"> 
-				<span class="text">
-					instagram
-				</span> 
-				<img src="images/instagram.svg" alt="instagram">
-			</a>
-		
-			<a href="https://twitter.com/AryanW5" target="_blank" title="twitter"> 
-				<span class="text">
-					twitter
-				</span>
-				<img src="images/twitter.svg" alt="twitter">
-			</a> 
-			
-
-		</div>
- 	</footer>
-	<button id="top-button" style="display: inline-block;"> 
-		<img src="images/finger-up-emoji-clipart-21.png" alt=""> 
-	</button>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
